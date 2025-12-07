@@ -1,0 +1,42 @@
+export default function Dashboard() {
+  return (
+    <main className="min-h-screen bg-slate-100 p-10">
+
+      <h1 className="text-3xl font-bold text-blue-900">
+        Admin Dashboard
+      </h1>
+
+      <p className="text-gray-600 mt-2">
+        Mineral management system (Prototype)
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="font-bold text-lg">Add Mineral</h2>
+          <p>Create new mineral record</p>
+          <button className="mt-3 bg-green-600 text-white px-4 py-2 rounded">
+            Add
+          </button>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="font-bold text-lg">Edit Mineral</h2>
+          <p>Update any existing data</p>
+          <button className="mt-3 bg-yellow-500 text-white px-4 py-2 rounded">
+            Edit
+          </button>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="font-bold text-lg">Delete Mineral</h2>
+          <p>Remove old records</p>
+          <button className="mt-3 bg-red-600 text-white px-4 py-2 rounded">
+            Delete
+          </button>
+        </div>
+
+      </div>
+    </main>
+  )
+}
